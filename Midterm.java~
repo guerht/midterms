@@ -1,0 +1,27 @@
+/*
+ * Midterm.java
+ * Write our normal 4-line documentation here (with your name, etc)
+ */
+
+// You will need a Scanner object
+
+/*
+ * Begin the class here
+ */
+public {
+  
+  /*
+   * Begin the main method here
+   */
+  public {
+    
+    // Create a new TEST object (you'll need a second file that defines that object - find details below)
+    /*
+     * Details about the TEST object
+     * variables:
+     * methods:
+     */
+    
+  } // END main method
+  
+} // END class
