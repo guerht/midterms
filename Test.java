@@ -5,7 +5,7 @@ public class Test {
 	private String[] questions = {
 		"What is the capital city of Korea?",
 		"What is 120 - 80?",
-		"How many fingers does Simon possess? Please write this in English",
+		"How many fingers does Simon possess? Write the answer in English",
 		"What is black and liquid?",
 		"Convert 1in. into centimetres."
 	};
@@ -28,9 +28,36 @@ public class Test {
 				System.out.println("Your answer " + answersUser[i] + " is RIGHT!");
 				score += 2;
 			}
-			else if (answersUser[0].equals("seoul") || answersUser[2].equals("ten") || answersUser[4].equals("2.54")) {
+			/*else if (answersUser[0].equals("seoul") || answersUser[2].equals("ten") || answersUser[4].equals("2.54")) {
 				System.out.println("Your answer " + answersUser[i] + " is kind of right...");
 				score += 1;
+			}*/
+			else if(i == 0) {
+				if(answersUser[0].equals("seoul")) {
+					System.out.println("Your answer " + answersUser[i] + " is kind of right...");
+					score += 1;
+				}
+				else {
+					System.out.println("Your answer " + answersUser[i] + " is WRONG!");
+				}
+			}
+			else if(i == 2) {
+				if(answersUser[2].equals("ten") || answersUser[2].equals("Ten") || answersUser[2].equals("10")) {
+					System.out.println("Your answer " + answersUser[i] + " is kind of right...");
+					score += 1;
+				}
+				else {
+					System.out.println("Your answer " + answersUser[i] + " is WRONG!");
+				}
+			}
+			else if(i ==4) {
+				if(answersUser[4].equals("2.54")) {
+					System.out.println("Your answer " + answersUser[i] + " is kind of right...");
+					score += 1;
+				}
+				else {
+					System.out.println("Your answer " + answersUser[i] + " is WRONG!");
+				}
 			}
 			else {
 				System.out.println("Your answer " + answersUser[i] + " is WRONG!");

@@ -4,6 +4,7 @@
  * Name: Seunghoon Park
  * Date: 19th October 2015
  */
+ import java.util.Scanner;
 /*
  * Begin the class here
  */
@@ -65,12 +66,17 @@ public class Midterm {
     
     // STEP 2: Initialize your Test() object here
     Test test = new Test();
+	Scanner confirm = new Scanner(System.in);
+	String character;
     
     // STEP 3: askQuestions() here
-    test.askQuestions();
-    test.printGrade();
-    System.out.println("Your letter grade is: " + test.calcGrade() + ".");
-    
+	do {
+		test.askQuestions();
+		test.printGrade();
+		System.out.println("Your letter grade is: " + test.calcGrade() + ".");
+		System.out.println("Try the test again? (y,n)");
+		character = confirm.nextLine();
+    } while (character.equals("y") || character.equals("Y"));
     // STEP 4: chkAnswers() here
     //***.chkAnswers();
     
