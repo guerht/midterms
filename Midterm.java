@@ -76,6 +76,7 @@ public class Midterm {
 		System.out.println("Your letter grade is: " + test.calcGrade() + ".");
 		System.out.println("Try the test again? (y,n)");
 		character = confirm.nextLine();
+		test.reset();
     } while (character.equals("y") || character.equals("Y"));
     // STEP 4: chkAnswers() here
     //***.chkAnswers();

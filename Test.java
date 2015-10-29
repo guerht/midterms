@@ -97,4 +97,8 @@ public class Test {
 		grade = score*10;
 		System.out.println("Your percent score is: " + grade);
 	}
+	public void reset() {
+		grade = 0;
+		score = 0;
+	}
 }
